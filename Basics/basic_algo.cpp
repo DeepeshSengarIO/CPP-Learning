@@ -1,5 +1,7 @@
 #include <iostream>
-
+#include <string>
+#include <vector>
+using namespace std;
 /*
     Sorting Functions
 */
@@ -15,7 +17,7 @@ void sort_functions(){
     sort(a, a+n);
 
     // string sort
-    string s = "Monkey";
+    std::string s = "Monkey";
     sort(s.begin(), s.end());
 
     // pairs sorting
