@@ -3,7 +3,7 @@
 using namespace std;
 
 int n;                      // Size of the board (n x n)
-int solution_count;              // Number of valid solutions
+int solution_count = 0;              // Number of valid solutions
 vector<bool> column;        // column[x] is true if column x is occupied
 vector<bool> diag1;         // diag1[x + y] is true if "/" diagonal is occupied
 vector<bool> diag2;         // diag2[x - y + n - 1] is true if "\" diagonal is occupied
@@ -22,7 +22,7 @@ void n_queen(int y){
 }
 
 int main(){
-    n = 3;
+    n = 4;
     column.resize(n);
     diag1.resize(2 * n);
     diag2.resize(2 * n);
